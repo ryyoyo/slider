@@ -1,4 +1,4 @@
-
+ 
 
 /*setTimeout(function(){
 	$('.imgs>img:nth-child(1)').removeClass('current').addClass('leave')
