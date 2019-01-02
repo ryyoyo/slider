@@ -5,31 +5,34 @@
 *{
 	box-sizing: border-box;
 }
+
 .window{
 	width: 400px;
 	height: 300px;
-	margin: 20px auto;
-	/*border: 10px solid red;*/
+	margin: 100px auto;
 	overflow: hidden;
 }
 .imgs{
-	position: relative;
+	display: flex;
+	transition: all 1s;
 }
 .imgs > img{
 	width: 100%;
-	transition: all 0.5s;
-	position: absolute;
-	top: 0;
+	flex-shrink:0;
 }
-.imgs > img.current{
-	left: 0;
-	transform: translateX(0);
-	z-index: 1
+#controls{
+	text-align: center;
 }
-.imgs > img.leave{
-	transform: translateX(-100%);
-	z-index: 1
+#controls button{
+	padding: 5px;
+	border-radius: 5px;
 }
-.imgs > img.enter{
-	transform: translateX(100%);
+
+#btnWrapper{
+	margin-bottom: 20px;
+}
+#btnWrapper button{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
 }
